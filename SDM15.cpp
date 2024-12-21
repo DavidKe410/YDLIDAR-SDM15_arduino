@@ -321,7 +321,7 @@ bool SDM15::RestoreFactorySettings() {
   byte recv_checksum = CalculateChecksum(recv, sizeof(recv));
 
   // check checksum
-  if (recv_checksum != recv[5])
+  if (recv_checksum != recv[4])
     return false;
   else
     return true;
